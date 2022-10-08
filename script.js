@@ -39,7 +39,7 @@ login.addEventListener("click", () => {
 function checkPwd() {
   const pwd = document.getElementById("create-pwd").value;
   const confirmPwd = document.getElementById("confirm-pwd").value;
-
+  console.log(pwd, checkPwd);
   if (pwd.length !== 0 && confirmPwd.length !== 0) {
     if (pwd !== confirmPwd) {
       alert("Error: Passwords don't match");
