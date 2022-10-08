@@ -16,8 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--primary-color); */
-  background-color: #06283d;
+  background-color: #265df2;
 }
 
 .container {
@@ -25,7 +24,6 @@ body {
   max-width: 430px;
   width: 100%;
   background: #fff;
-  border: solid 1px var(--primary-color);
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
