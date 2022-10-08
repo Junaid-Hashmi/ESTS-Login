@@ -75,7 +75,8 @@
               <input
                 type="password"
                 class="password"
-                placeholder="Create a password"
+                id="create-pwd"
+                placeholder="Create your password"
                 required
               />
               <i class="uil uil-lock icon"></i>
@@ -84,7 +85,8 @@
               <input
                 type="password"
                 class="password"
-                placeholder="Confirm a password"
+                id="confirm-pwd"
+                placeholder="Confirm your password"
                 required
               />
               <i class="uil uil-lock icon"></i>
@@ -98,7 +100,7 @@
             </div>
 
             <div class="input-field button">
-              <input type="button" value="Signup" />
+              <input onclick="checkPwd()" type="button" value="Signup" />
             </div>
           </form>
 
