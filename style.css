@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   /* background-color: var(--primary-color); */
+  background-color: #06283d;
 }
 
 .container {
