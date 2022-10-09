@@ -79,9 +79,10 @@ function signup() {
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      // Signed in
+      // Signed up
       var user = userCredential.user;
       console.log(userCredential);
+      alert("Signed up successfully!");
       // ...
     })
     .catch((error) => {
@@ -89,6 +90,7 @@ function signup() {
       var errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+      alert("Error signing up...");
 
       // ..
     });
@@ -107,6 +109,7 @@ function login() {
       var user = userCredential.user;
       console.log("Login successful");
       console.log(userCredential);
+      alert("Logged in successfully!");
       // ...
     })
     .catch((error) => {
@@ -114,5 +117,6 @@ function login() {
       var errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+      alert("Error Logging in...");
     });
 }
