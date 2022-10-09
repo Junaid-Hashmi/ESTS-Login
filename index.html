@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESTS - Login or Register</title>
 
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-auth-compat.js"></script>
     <!-- Icons Link -->
     <link
       rel="stylesheet"
@@ -17,18 +21,25 @@
   <body>
     <div class="container">
       <div class="forms">
+        <!-- Login form -->
         <div class="form login">
           <span class="title">Login</span>
 
           <form action="#">
             <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
+              <input
+                id="login-email"
+                type="text"
+                placeholder="Enter your email"
+                required
+              />
               <i class="uil uil-envelope icon"></i>
             </div>
             <div class="input-field">
               <input
                 type="password"
                 class="password"
+                id="login-pwd"
                 placeholder="Enter your password"
                 required
               />
@@ -46,7 +57,7 @@
             </div>
 
             <div class="input-field button">
-              <input type="button" value="Login" />
+              <input onclick="login()" type="button" value="Login" />
             </div>
           </form>
 
@@ -68,7 +79,12 @@
               <i class="uil uil-user"></i>
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
+              <input
+                id="signup-email"
+                type="text"
+                placeholder="Enter your email"
+                required
+              />
               <i class="uil uil-envelope icon"></i>
             </div>
             <div class="input-field">
@@ -100,7 +116,7 @@
             </div>
 
             <div class="input-field button signup-btn">
-              <input type="button" value="Signup" />
+              <input onclick="signup()" type="button" value="Signup" />
             </div>
           </form>
 
