@@ -83,6 +83,7 @@ function signup() {
       var user = userCredential.user;
       console.log(userCredential);
       alert("Signed up successfully!");
+      window.open("dashboard.html", "_self");
       // ...
     })
     .catch((error) => {
