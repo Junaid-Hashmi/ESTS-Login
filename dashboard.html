@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTS-Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="dashboard">
+    <section class="sidebar">
+      <div class="profile">
+        <img id="photo" src="images/profile-pic-avatar.svg" alt="" />
+        <div class="name">Your Name</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a class="nav-links" href="#">Dashboard</a></li>
+          <li><a class="nav-links" href="#">Attendance</a></li>
+          <li><a class="nav-links" href="#">My profile</a></li>
+          <li><a class="nav-links" href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main">
+      <h2 class="heading">Attendance Portal</h2>
+      <div class="date-display">Date: <span id="date">13/10/2022</span></div>
+      <div class="timeclock">
+        <div class="timing-box">
+          <span class="timing-box--heading">Login Time</span>
+          <div class="time">00:00 <span class="am-pm">am</span></div>
+        </div>
+        <div class="timing-box">
+          <span class="timing-box--heading">Logout Time</span>
+          <div class="time">00:00 <span class="am-pm">pm</span></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

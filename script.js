@@ -110,6 +110,7 @@ function login() {
       console.log("Login successful");
       console.log(userCredential);
       alert("Logged in successfully!");
+      window.open("dashboard.html", "_self");
       // ...
     })
     .catch((error) => {
